@@ -10,7 +10,7 @@ url = 'https://pogoda.interia.pl/prognoza-szczegolowa-bilgoraj,cId,1496'
 
 # Define a command-line argument for the number of weather entries to display
 parser = argparse.ArgumentParser()
-parser.add_argument("num_entries", type=int, help="Number of weather entries to display")
+parser.add_argument("--num_entries",default=12, type=int, help="Number of weather entries to display")
 args = parser.parse_args()
 
 # Set the text and background colors using ANSI escape sequences
